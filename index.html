@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>HomePage</title>
+  </head>
+  <body>
+    <section class="showcase">
+      <header>
+        <h2 class="logo">Travel</h2>
+        <div class="toggle"></div>
+      </header>
+      <video src="Pexels_Videos_2169880_SparkVideo_SparkVideo.mp4" muted loop autoplay></video>
+
+      <div class="overlay"></div>
+      <div class="text"  >
+        <h2>Never Stop</h2>
+        <h3>Explore The World</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt
+          velit perferendis doloremque nam quos impedit, nobis sint eum ratione
+          quis vel quaerat, consequatur minima, explicabo officiis facilis
+          architecto laudantium voluptatibus?
+        </p>
+
+        <a class=link href="#"> Explore</a>
+        <br/>
+        <ul class="social">
+          <li>
+            <a href="#">
+          <img class=smaller-image src="Facebook-removebg-preview.png" alt="Facebook" />
+          </li>
+        </a>
+        <li>
+            <a href="#">
+            <img class=smaller-image ; src="Twitter-removebg-preview.png" alt="Twitter" />
+          </a></li>
+          <li>
+            <a href="#">
+            <img class=smaller-image id="insta" src="instagran-removebg-preview.png" alt="Instagram" />
+          </a></li>
+        </ul>
+      </div>
+    </section>
+    <div class="menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Destination</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <script>
+      const menuToggle = document.querySelector(".toggle");
+      const showcase = document.querySelector(".showcase");
+
+      menuToggle.addEventListener("click", () => {
+        menuToggle.classList.toggle("active");
+        showcase.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
